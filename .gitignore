@@ -3,6 +3,7 @@
 *.obj
 *.pdb
 *.ilk
+*.cso
 
 # generated from the source video, not redistributed
 frames.gray
