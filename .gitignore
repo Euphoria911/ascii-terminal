@@ -10,3 +10,6 @@ audio.wav
 *.mp4
 *.webm
 *.mkv
+
+# local-only preview clip of the source video
+assets/badapple.gif

@@ -1,5 +1,9 @@
 # ascii-terminal
 
+<p align="center">
+  <img src="assets/donut.gif" alt="spinning ASCII donut in a terminal" width="640">
+</p>
+
 Two terminal animations for Windows, drawn in ASCII with ANSI escapes.
 
 - **donut** - spinning 3D torus. Python and C versions, same math.
