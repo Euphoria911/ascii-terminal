@@ -1,0 +1,12 @@
+# build output
+*.exe
+*.obj
+*.pdb
+*.ilk
+
+# generated from the source video, not redistributed
+frames.gray
+audio.wav
+*.mp4
+*.webm
+*.mkv
