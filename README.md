@@ -24,7 +24,19 @@ Spin speed and frame delay are constants at the top of each file. Ctrl+C exits.
 
 ## badapple
 
-The video and audio are not in this repo. Bring your own copy of the video, then convert it once (needs `ffmpeg` on PATH):
+<p align="center">
+  <img src="assets/demo.gif" alt="badapple.exe playing the demo animation" width="640">
+</p>
+
+The player plays any 120x90 gray frame file. No video needed to try it - `demo.py` writes an original looping animation:
+
+```
+python demo.py
+cl /O2 /W4 /nologo badapple.c winmm.lib
+badapple.exe demo.gray
+```
+
+To play a video, bring your own copy and convert it once (needs `ffmpeg` on PATH). No video or audio is included in this repo:
 
 ```
 powershell -File prep.ps1 -Video path\to\bad_apple.mp4
@@ -33,7 +45,6 @@ powershell -File prep.ps1 -Video path\to\bad_apple.mp4
 That writes `frames.gray` (raw 8-bit gray, 120x90, 30 fps) and `audio.wav`. Then:
 
 ```
-cl /O2 /W4 /nologo badapple.c winmm.lib
 badapple.exe frames.gray audio.wav
 ```
 

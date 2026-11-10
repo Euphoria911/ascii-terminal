@@ -7,6 +7,7 @@
 # generated from the source video, not redistributed
 frames.gray
 audio.wav
+demo.gray
 *.mp4
 *.webm
 *.mkv
